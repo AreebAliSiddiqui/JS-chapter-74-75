@@ -11,8 +11,8 @@ Student.prototype.showDetails = function (){
     
 }
 
-Student.prototype.updateMarks = function(){
-    return `` 
+Student.prototype.updateMarks = function(marks){
+    return  this.marks = marks;
 }
 
 let student1 = new Student('Areeb',3080,90);
@@ -22,3 +22,7 @@ let student3 = new Student('Usman',3082,85);
 console.log(student1.showDetails());
 console.log(student2.showDetails());
 console.log(student3.showDetails());
+
+console.log(student1.updateMarks(70));
+console.log(student2.updateMarks(92));
+console.log(student3.updateMarks(88));
