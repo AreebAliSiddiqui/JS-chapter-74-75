@@ -7,6 +7,8 @@ function Student(name,rollNumber,marks){
 }
 
 Student.prototype.showDetails = function (){
+    console.log(`Name: ${this.name} Roll number: ${this.rollNumber}
+        marks: ${this.marks}`);
     
 }
 
