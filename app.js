@@ -7,16 +7,18 @@ function Student(name,rollNumber,marks){
 }
 
 Student.prototype.showDetails = function (){
-    console.log(`Name: ${this.name} Roll number: ${this.rollNumber}
-        marks: ${this.marks}`);
+    return `Name: ${this.name} - Roll number: ${this.rollNumber} - marks: ${this.marks}`;
     
 }
 
 Student.prototype.updateMarks = function(){
-
+    return `` 
 }
 
-let student1 = new Student('areeb',3080,90);
+let student1 = new Student('Areeb',3080,90);
 let student2 = new Student('Ali',3081,75);
 let student3 = new Student('Usman',3082,85);
 
+console.log(student1.showDetails());
+console.log(student2.showDetails());
+console.log(student3.showDetails());
